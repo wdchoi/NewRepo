@@ -284,6 +284,7 @@ void play_AI()
 			if (m != rl_.memory_.num_elements_ - 2) // if next is not the terminal state
 			{
 				 //Q_next = ...;
+				Q_next = rl_.nn_.getOutputValueMaxComponent();
 			}
 
 			float Q_target;
